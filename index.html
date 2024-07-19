@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,66 @@
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
     <header class="header container">
         <nav class="header__nav">
-            <span><a href="index.html"><img src="./image/Group 21.svg" alt=""></a></span>
+            <div class="header__items">
+                <span><a href="index.html"><img src="./image/Group 21.svg" alt=""></a></span>
+                <ul class="header__lists">
+                    <li class="header__item"><a href="#" class="header__link">Pricing</a></li>
+                    <li class="header__item"><a href="#" class="header__link">About</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <span class="header__burger"><i class="fa-solid fa-bars"></i></span>
+
+            <button class="header__btn">Schedule a Demo</button>
         </nav>
     </header>
+
+    <main>
+        <section class="start container">
+            <div class="start__items">
+                <div class="start__item">
+                    <h1 class="start__title">Start building with our APIs for absolutely free.</h1>
+
+                    <div class="start__adress">
+                        <input type="email" placeholder="Enter email address">
+                        <button class="start__btn">Schedule a Demo</button>
+                    </div>
+                    <span class="start__any">Have any questions? <p class="start__us">Contact Us</p></span>
+                </div>
+                <div class="start__image">
+                    <img src="./image/Group 30.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="work container">
+
+            <div class="work__items">
+
+                <div class="work__item">
+                    <h1 class="work__title">Who we work with</h1>
+                    <p class="work__list">Today, millions of people around the world have successfully connected their
+                        accounts to apps they love using our API. We provide developers with the tools they need to
+                        create easy and accessible experiences for their users. </p>
+                    <button class="work__btn">About Us</button>
+                </div>
+
+                    <div class="work__img">
+                        <img src="./image/Combined Shape 2.svg" alt="">
+                        <img src="./image/Combined Shape 3.svg" alt="">
+                        <img src="./image/Combined Shape 5.svg" alt="">
+                        <img src="./image/Shape 2.svg" alt="">
+                        <img src="./image/Combined Shape.svg" alt="">
+                        <img src="./image/Combined Shape 6.svg" alt="">
+                    </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

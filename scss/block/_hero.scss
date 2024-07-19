@@ -1,0 +1,138 @@
+.start{
+    width: 100%;
+    background-color: #EDF3F8;
+    // margin-top: 50px;
+    
+    &__items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        order: 2;
+    }
+    &__adress{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        input{
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            color: #36536B;
+            border-radius: 20px;
+            background-color: whitesmoke;
+        }
+
+    }
+    &__title{
+        font-size: 24px;
+        color: #36536B;
+    }
+    &__btn{
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        background-color: #BA4270;
+        color: white;
+        font-weight: 600;
+    }
+    &__any{
+        display: flex;
+        gap: 5px;
+        color: #6C8294;
+        p{
+            font-weight: 600;
+        }
+    }
+    &__image{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .start{
+
+        &__image{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 50%;
+            }
+        }
+
+        &__title{
+            font-size: 48px;
+        }
+        &__adress{
+            flex-direction: row;
+        }
+        
+        
+    }
+}
+@media (min-width: 1024px) {
+    .start{
+        &__items{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        &__item{
+            // background-color: olivedrab;
+            width: 50%;
+            display: flex;
+            text-align: start;
+            align-items: start;
+            gap: 20px;
+            padding: 10px 20px;
+            
+        }
+        &__title{
+            width: 90%;
+            font-size: 68px;
+            line-height: 80px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        &__image{
+            width: 50%;
+            order: 2;
+            img{
+                width: 80%;
+            }
+        }
+
+        &__adress{
+            input{
+                padding: 15px 40px;
+                font-size: 18px;
+            }
+        }
+        &__btn{
+            padding: 15px 30px;
+            font-size: 18px;
+        }
+        &__any{
+            font-size: 20px;
+        }
+
+        
+
+
+    }
+}

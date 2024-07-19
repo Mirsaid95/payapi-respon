@@ -55,5 +55,266 @@ button:hover {
 }
 
 .header {
-  background-color: orange;
+  width: 100%;
+  background-color: white;
+  padding: 20px 20px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__items {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.header__lists {
+  display: none;
+}
+.header__btn {
+  display: none;
+}
+.header__burger {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .header__lists {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .header__lists a {
+    color: #36536B;
+  }
+  .header__btn {
+    display: block;
+    font-size: 18px;
+    color: white;
+    background-color: #BA4270;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+  }
+  .header__burger {
+    display: none;
+  }
+}
+.start {
+  width: 100%;
+  background-color: #EDF3F8;
+}
+.start__items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.start__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  order: 2;
+}
+.start__adress {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.start__adress input {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  color: #36536B;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+.start__title {
+  font-size: 24px;
+  color: #36536B;
+}
+.start__btn {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #BA4270;
+  color: white;
+  font-weight: 600;
+}
+.start__any {
+  display: flex;
+  gap: 5px;
+  color: #6C8294;
+}
+.start__any p {
+  font-weight: 600;
+}
+.start__image {
+  width: 100%;
+}
+.start__image img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .start__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .start__image img {
+    width: 50%;
+  }
+  .start__title {
+    font-size: 48px;
+  }
+  .start__adress {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .start__items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .start__item {
+    width: 50%;
+    display: flex;
+    text-align: start;
+    align-items: start;
+    gap: 20px;
+    padding: 10px 20px;
+  }
+  .start__title {
+    width: 90%;
+    font-size: 68px;
+    line-height: 80px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .start__image {
+    width: 50%;
+    order: 2;
+  }
+  .start__image img {
+    width: 80%;
+  }
+  .start__adress input {
+    padding: 15px 40px;
+    font-size: 18px;
+  }
+  .start__btn {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+  .start__any {
+    font-size: 20px;
+  }
+}
+.work {
+  width: 100%;
+  background-color: #1B262F;
+  margin-top: 50px;
+  padding: 30px 30px;
+}
+.work__items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.work__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  order: 2;
+}
+.work__img {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.work__img img {
+  width: 100%;
+}
+.work__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+.work__list {
+  font-size: 16px;
+  text-align: center;
+  color: #FBFCFE;
+  line-height: 25px;
+}
+.work__btn {
+  font-size: 16px;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .work__img {
+    width: 80%;
+    padding: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .work__img img {
+    width: 100%;
+  }
+  .work__title {
+    font-size: 48px;
+  }
+  .work__list {
+    width: 70%;
+    font-size: 18px;
+  }
+  .work__btn {
+    padding: 15px 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .work__items {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+  }
+  .work__item {
+    width: 50%;
+    order: 0;
+    align-items: start;
+    justify-content: start;
+  }
+  .work__list {
+    text-align: start;
+    line-height: 30px;
+  }
+  .work__img {
+    width: 50%;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .work__img img {
+    width: 100%;
+  }
 }
