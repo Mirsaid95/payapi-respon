@@ -1,0 +1,180 @@
+.finans{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #EDF3F8;
+    
+    &__items{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    &__card-text{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__card-title{
+        color: #36536B;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    &__card-list{
+        font-size: 16px;
+        color: #6C8294;
+    }
+    &__register{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        h1{
+            font-size: 20px;
+            font-weight: 800;
+            color: #36536B;
+        }
+
+        input{
+            font-size: 16px;
+            width: 250px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            font-weight: 900;
+        }
+    }
+    &__button{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__btn{
+        font-size: 16px;
+        width: 250px;
+        height: 50px;
+        border-radius: 20px;
+        border: none;
+        background-color: #BA4270;
+        color: white;
+    }
+
+
+
+}
+
+@media (min-width: 768px) {
+    .finans{
+
+        &__cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        &__card-list{
+            line-height: 25px;
+            font-size: 16px;
+        }
+        &__card-title{
+            font-size: 18px;
+        }
+
+        &__register{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                font-size: 40px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+        &__button{
+            flex-direction: row;
+            position: relative;
+            right: 20%;
+        }
+        &__btn{
+            width: 200px;
+            position: absolute;
+            left: 80%;
+            padding: 15px 30px;
+        }
+        
+    }
+}
+@media (min-width: 1024px) {
+    .finans{
+
+        &__cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        &__card-list{
+            line-height: 25px;
+            font-size: 20px;
+        }
+        &__card-title{
+            font-size: 20px;
+        }
+        &__register{
+            width: 100%;
+            // background-color: orange;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            h1{
+                font-size: 56px;
+            }
+
+            
+        }
+        &__button{
+            
+            h1{
+                font-size: 40px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            input{
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+
+            }
+        }
+        &__btn{
+            font-size: 20px;
+            width: 230px;
+           
+
+        }
+
+        &__logo{
+            width: 100%;
+            img{
+                width: 30%;
+            }
+        }
+
+    }
+}
